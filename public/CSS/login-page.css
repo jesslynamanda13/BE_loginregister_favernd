@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-size: cover;
+}
+
+#halaman {
+    display: flex;
+    align-items: center;
+    background-color: #14213D;
+    padding-top: 114px;
+    padding-bottom: 114px;
+    flex-direction: column;
+}
+
+#halaman .content{
+    background-color: white;
+    border-color: white;
+    border-radius: 1rem;
+    width: 400px;
+    height: 445px;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+#halaman .content #login-text{
+    display: flex;
+    justify-content: center;
+    margin:20px 0;
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 36px;
+}
+
+#halaman .content .form{
+    margin-bottom: 10px;
+}
+
+#halaman .content .form-input{
+    width: 100%;
+    border-radius: 0.35rem;
+    border: 1px solid #D9DBDF;
+    color: black;
+    padding: 10px;
+    margin: 3px 0;
+}
+
+#halaman .content .submitBtn{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+/* #halaman .content .remember-me #remember-input{
+    border-radius: 100px;
+} */
+
+#halaman .content .submitBtn #loginBtn{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #F9C92D;
+    padding: 8px 70px;
+    border-radius: 0.7rem;
+    font-size: 20px;
+    width: 200px;
+    
+}
+
+#halaman .content #forgot-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #596276;
+}
+
+#halaman .content .submitBtn #registerBtn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 200px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #D9DBDF;
+    padding: 8px 70px;
+    border-radius: 0.7rem;
+    font-size: 20px;
+    color: black;
+}
+
+::placeholder{
+    color: #898989;
+    opacity: 1;
+}
+

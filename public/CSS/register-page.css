@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: #14213d;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+.navbar {
+  height: 70px;
+  background-color: #14213d;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar .navbar-signIn {
+  color: white;
+  padding: 7px 30px 0px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar .navbar-getStarted {
+  background-color: #f9c92d;
+  color: black;
+  padding: 7px 30px 7px 30px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar .navbar-signIn:hover {
+  color: #f9c92d;
+}
+.navbar .navbar-text {
+  display: flex;
+}
+
+#modal {
+  display: flex;
+  align-items: center;
+  background-color: #14213d;
+  padding: 20px 200px 63px 200px;
+  flex-direction: column;
+}
+
+#modal .register-full-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#modal .content {
+  background-color: white;
+  border-color: white;
+  border-radius: 1rem;
+  width: 500px;
+  height: 760px;
+  margin: 20px;
+  padding: 0 20px;
+}
+
+#modal .content-item {
+  margin: 10px 0px;
+}
+
+#modal .content #register-text {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+}
+
+#modal .content .form-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d9dbdf;
+  color: #d9dbdf;
+  padding: 10px;
+  margin: 3px 0;
+  color: black;
+  background-color: #F4F4F4;
+}
+
+#modal .content .fullName-input {
+  width: 222px;
+  border-radius: 10px;
+  border: 1px solid #d9dbdf;
+  color: #d9dbdf;
+  padding: 10px;
+  margin: 3px 0;
+  color: black;
+  background-color: #F4F4F4;
+}
+
+#modal .register-gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#modal .register-gender input[type="radio"] {
+  margin-right: 10px;
+}
+
+#modal .register-gender-detail {
+  width: 222px;
+  border-radius: 10px;
+  border: 1px solid #d9dbdf;
+  color: #d9dbdf;
+  padding: 10px;
+  margin: 3px 0;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+}
+
+#modal .gender-input {
+  width: 10%;
+  border-radius: 10px;
+}
+
+#modal .content .registerBtn {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#modal .content #registerBtn {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  border: none;
+  background-color: #f9c92d;
+  border-radius: 0.7rem;
+  width: 200px;
+}
+
+#modal .content #haveAcc-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #596276;
+  font-size: 16px;
+}
+
+::placeholder{
+  color: #898989;
+}
