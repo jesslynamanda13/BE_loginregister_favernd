@@ -26,6 +26,15 @@ class SessionCtrl extends Controller
         return view('register');
     }
 
+    public function posts(){
+        return view('posts');
+    }
+
+    function logout(){
+        Auth::logout();
+        return redirect('/')->with('success', 'berhasil logout');
+    }
+
     function loginData(Request $request){
 
        Session::flash('Username', $request->Username);
@@ -87,5 +96,27 @@ class SessionCtrl extends Controller
 
         
     }
+
+    // public function edit($id){
+    //     $user = User::findOrFail($id);
+    //     return view('editKaryawan', compact('perkaryawan'));
+    // }
+
+    // public function update(Request $request, $id){
+
+    //     $extension = $request->file('Image')->getClientOriginalExtension();
+    //     $filename = $request->file('Image')->getClientOriginalName();
+    //     // $filename = $request->Name;
+    //     $request->file('Image')->storeAs('/public/Karyawan/', $filename);
+
+    //     karyawan::findOrFail($id)->update([
+    //         'Name' => $request->Name,
+    //         'Age' => $request->Age,
+    //         'Address' => $request->Address,
+    //         'PhoneNumber' => $request->PhoneNumber,
+    //         'Image' => $filename
+    //     ]);
+    //     return redirect('/dashboard');
+    // }
 
 }

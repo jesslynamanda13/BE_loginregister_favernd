@@ -15,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [SessionCtrl::class, 'home']);
-Route::get('/sign_in', [SessionCtrl::class, 'sign_in']);
-Route::get('/register', [SessionCtrl::class, 'register']);
+Route::get('/sign_in', [SessionCtrl::class, 'sign_in'])->middleware('isUser');
+Route::get('/register', [SessionCtrl::class, 'register'])->middleware('isUser');
+Route::get('/posts', [SessionCtrl::class, 'posts'])->middleware('isNotUser');
+
 
 Route::post('/create', [SessionCtrl::class, 'create']);
 Route::post('/loginData', [SessionCtrl::class, 'loginData']);
+Route::get('/logout', [SessionCtrl::class, 'logout']);
+Route::post('/logout', [SessionCtrl::class, 'logout']);
 Route::get('/dashboard', [SessionCtrl::class, 'dash'])->middleware('isAdmin');
