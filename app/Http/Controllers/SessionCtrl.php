@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Session;
 
 class SessionCtrl extends Controller
 {
+    public function dash(){
+        return view('dashboard');
+    }
     public function home(){
         return view ('homepage');
     }

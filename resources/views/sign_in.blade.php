@@ -40,7 +40,7 @@
           <input class="form-input"  value = "{{ Session::get('Username') }}" name = "Username" id="inputUsername" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="form">
-          <input class="form-input" value = "{{ Session::get('password') }}" name = "password" id="inputPassword" type="password" class="form-control" placeholder="Password">
+          <input class="form-input"  name = "password" id="inputPassword" type="password" class="form-control" placeholder="Password">
         </div>
         <div class="remember-me">
           <input type="checkbox" name="remember" id="remember-input">

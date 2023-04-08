@@ -20,3 +20,4 @@ Route::get('/register', [SessionCtrl::class, 'register']);
 
 Route::post('/create', [SessionCtrl::class, 'create']);
 Route::post('/loginData', [SessionCtrl::class, 'loginData']);
+Route::get('/dashboard', [SessionCtrl::class, 'dash'])->middleware('isAdmin');

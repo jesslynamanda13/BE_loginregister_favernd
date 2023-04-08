@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('gender');
             $table->string('password');
             $table->string('password_confirmation');
+            $table->boolean('isAdmin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
